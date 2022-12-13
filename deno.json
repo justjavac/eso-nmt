@@ -1,0 +1,41 @@
+{
+  "tasks": {
+    "split": "deno run --allow-read --allow-write ./scripts/split.ts"
+  },
+  "fmt": {
+    "options": {
+      "lineWidth": 120
+    },
+    "files": {
+      "exclude": [
+        "node_modules",
+        "dist",
+        "public"
+      ]
+    }
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-unused-vars"
+      ]
+    },
+    "files": {
+      "exclude": [
+        "node_modules",
+        "dist",
+        "public",
+        "src"
+      ]
+    }
+  },
+  "test": {
+    "files": {
+      "exclude": [
+        "node_modules",
+        "src"
+      ]
+    }
+  },
+  "importMap": "import_map.json"
+}

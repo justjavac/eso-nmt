@@ -1,0 +1,9 @@
+{
+  "version": "2",
+  "remote": {
+    "https://deno.land/std@0.166.0/_util/asserts.ts": "d0844e9b62510f89ce1f9878b046f6a57bf88f208a10304aab50efcb48365272",
+    "https://deno.land/std@0.166.0/encoding/csv.ts": "9a9ba119e29101d1461b89bd2a7c20d3f4ea02768167b879e17116cb0f9ad994",
+    "https://deno.land/std@0.166.0/encoding/csv/_io.ts": "81a8c3f19687e9a067b06e26cece1fe8ee63ac2a4b233867e6e5982463349e73",
+    "https://deno.land/std@0.166.0/encoding/csv/_parser.ts": "dd44e1e6758984fb4aa1c34f8fb6e7db6b8eb4a2e1527d73db6d3b073576131e"
+  }
+}

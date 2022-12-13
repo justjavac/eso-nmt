@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "fastest-levenshtein": "https://deno.land/x/fastest_levenshtein@1.0.10/mod.ts",
+    "yup": "https://esm.sh/v99/yup@0.32.11",
+    "asserts": "https://deno.land/std@0.166.0/testing/asserts.ts",
+    "csv": "https://deno.land/std@0.166.0/encoding/csv.ts",
+    "@/": "./src/"
+  },
+  "scopes": {}
+}
