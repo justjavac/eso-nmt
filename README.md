@@ -43,3 +43,9 @@ python3 subword-nmt/subword_nmt/learn_joint_bpe_and_vocab.py -i gamedata/lang/to
 python3 subword-nmt/subword_nmt/apply_bpe.py -c gamedata/lang/bpecode.en < gamedata/lang/tok.en > gamedata/lang/bpe.en
 python3 subword-nmt/subword_nmt/apply_bpe.py -c gamedata/lang/bpecode.zh < gamedata/lang/tok.zh > gamedata/lang/bpe.zh
 ```
+
+### 二值化(binarize)
+
+```bash
+python preprocess.py --source-lang en --target-lang zh --trainpref gamedata/lang/train --validpref=gamedata/lang/valid --testpref=gamedata/lang/test --destdir gamedata/lang/data-bin --joined-dictionary --workers 20
+```
