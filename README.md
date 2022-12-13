@@ -53,5 +53,5 @@ python preprocess.py --source-lang en --target-lang zh --trainpref gamedata/lang
 ### 训练
 
 ```bash
-python train.py gamedata/lang/data-bin --arch transformer --share-decoder-input-output-embed --optimizer adam --adam-betas '(0.9, 0.98)' --clip-norm 0.0 --lr 5e-4 --lr-scheduler inverse_sqrt --warmup-updates 4000 --warmup-init-lr 1e-7 --dropout 0.3 --weight-decay 0.0001 --criterion label_smoothed_cross_entropy --label-smoothing 0.1 --max-tokens 4096 --update-freq 2 --save-dir gamedata/lang/checkpoints --max-epoch 100 --keep-last-epochs 10 --no-epoch-checkpoints --seed 1
+python train.py gamedata/lang/data-bin --arch transformer --share-decoder-input-output-embed --optimizer adam --adam-betas '(0.9, 0.98)' --clip-norm 0.0 --lr 5e-4 --lr-scheduler inverse_sqrt --warmup-updates 4000 --warmup-init-lr 1e-7 --dropout 0.3 --weight-decay 0.0001 --criterion label_smoothed_cross_entropy --label-smoothing 0.1 --max-tokens 4096 --update-freq 2 --save-dir gamedata/lang/checkpoints --max-epoch 100 --keep-last-epochs 10 --no-epoch-checkpoints --seed 1 --skip-invalid-size-inputs-valid-test
 ```
